@@ -75,3 +75,40 @@ button:hover {
 }
 /* estilização do button */
 
+
+#produtos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.cards{
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.cards:hover{
+    opacity: 0.9;
+    background-color: #51260e;
+    color: white;
+}
+
+.img{
+    margin: 10%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+img{
+    width: 40%;
+    text-align: center;
+}
+
+a{  
+    font-weight: bolder;
+
+}
