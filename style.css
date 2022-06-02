@@ -12,43 +12,37 @@ body, html {
 
 /* tamanho da logo */
 .logo > img {
-    width: 250px;
+    max-width: 50%;
 }
 /* tamanho da logo */
 
 /* centralizar o conteudo do header */
 header {
     width: 100%;
-    height: 20vh;
+    min-height: 10vh;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 /* centralizar o conteudo do header */
 
-/* navbar e efeitos */
-a {
-    color: black;
-}
-
-ul {
+.logo {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-ul, li {
-    list-style-type: none;
-    font-weight: 500;
-    margin-right: 2vw;
-    transition: all .5s;
+/* navbar e efeitos */
+nav, a {
+    color: black;
+    margin: 0 1.5em;
 }
 
-ul li:hover {
-    transition: all .5s;
-    border-bottom: 1px solid #51260e;
+a:hover {
+    border-bottom: 2px solid #51260e;
 }
+
 /* navbar e efeitos */
 
 /* estilização do button */
@@ -64,7 +58,6 @@ button {
     font-size: 100%;
 
     cursor: pointer;
-    margin-right: 5vw;
     padding: 10px 15px 10px 15px;
     transition: all .5s;
 }
@@ -72,6 +65,10 @@ button {
 button:hover {
     opacity: 0.9;
     transition: all .5s;
+}
+
+button .fa-location-dot {
+    margin-left: 10px;
 }
 /* estilização do button */
 
@@ -112,3 +109,22 @@ a{
     font-weight: bolder;
 
 }
+/* estilização ´quem somos´ */
+section{
+    display: grid;
+    width: 40vw;
+    margin-left: 10vw;
+    margin-top: 18vw;
+    color: #51260e;
+
+}
+
+.imagem{
+    display: grid;
+    width: 35vw;
+    margin-left: 55vw;
+    position: absolute;
+    top: 20vw;
+    right: 10vw;
+}
+/* estilização ´quem somos´ */
