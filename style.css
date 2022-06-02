@@ -62,6 +62,10 @@ button {
     transition: all .5s;
 }
 
+button, .fa-location-dot {
+    margin-left: 1em;
+}
+
 button:hover {
     opacity: 0.9;
     transition: all .5s;
