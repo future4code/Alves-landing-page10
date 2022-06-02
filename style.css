@@ -66,6 +66,10 @@ button:hover {
     opacity: 0.9;
     transition: all .5s;
 }
+
+button .fa-location-dot {
+    margin-left: 10px;
+}
 /* estilização do button */
 
 /* estilização ´quem somos´ */
