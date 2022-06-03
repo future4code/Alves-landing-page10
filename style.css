@@ -8,9 +8,11 @@
     border: none;
     box-sizing: border-box;
 }
+
 /* reset do padrão do navegador */
 
-body, html {
+body,
+html {
     font-family: 'Poppins', sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -20,9 +22,10 @@ body, html {
 }
 
 /* tamanho da logo */
-.logo > img {
+.logo>img {
     max-width: 50%;
 }
+
 /* tamanho da logo */
 
 /* centralizar o conteudo do header */
@@ -37,6 +40,7 @@ header {
     background-color: #FAEBD7;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
+
 /* centralizar o conteudo do header */
 
 ::placeholder {
@@ -70,13 +74,13 @@ strong {
 .slogan-procurar {
     margin-top: 20px;
     display: flex;
-    align-items: center; 
+    align-items: center;
 
     border-radius: 2px;
     border: 1px solid #a55b2a;
 }
 
-.slogan-procurar > i {
+.slogan-procurar>i {
     margin-left: 10px;
     color: #58280d;
 }
@@ -109,7 +113,8 @@ strong {
 }
 
 /* navbar e efeitos */
-nav, a {
+nav,
+a {
     font-weight: 300;
     color: #58280d;
     margin: 0 1.5em;
@@ -148,17 +153,18 @@ a:hover {
 .btn-header .fa-location-dot {
     margin-left: 10px;
 }
+
 /* estilização do button */
 
 
-#produtos{
+#produtos {
     display: flex;
     justify-content: center;
     text-align: center;
 
 }
 
-.cards{
+.cards {
     border: 1px solid black;
     border-radius: 5%;
     margin: 30px;
@@ -166,27 +172,29 @@ a:hover {
     transition: 0.5s;
     cursor: pointer;
 }
-.cards:hover{
+
+.cards:hover {
     opacity: 0.9;
     background-color: #51260e86;
     color: white;
 }
 
-.img{
+.img {
     margin: 10%;
     text-align: center;
     transition: 0.5s;
 }
 
-img{
+img {
     width: 50%;
     text-align: center;
 }
 
-a{  
+a {
     font-weight: bolder;
 
 }
+
 /* estilização ´quem somos´ */
 
 section {
@@ -211,13 +219,14 @@ section {
     height: 50vh;
 }
 
-.sobre-vetor{
+.sobre-vetor {
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: 30%;
 }
+
 /* estilização ´quem somos´ */
 
 
@@ -238,7 +247,8 @@ form {
     text-align: center;
 }
 
-input[type=text], textarea {
+input[type=text],
+textarea {
     width: 100%;
     border-radius: 2px;
 
@@ -246,7 +256,7 @@ input[type=text], textarea {
     resize: none;
 }
 
-form > input[type=text] {
+form>input[type=text] {
     padding: 12px;
     border: 1px solid #58280d;
 
@@ -275,35 +285,61 @@ textarea {
     transition: all .5s;
 }
 
-.btn-contact > .fa-paper-plane {
+.btn-contact>.fa-paper-plane {
     margin-left: 10px;
 }
 
-@media screen and (min-device-width : 320px) and (max-device-width : 480px){
-    #sobre{
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #sobre {
         width: 100%;
     }
-    .imagem{
+
+    .imagem {
         width: 35%;
-        margin-top: 60%;   
-    }
-    #produtos{
-        width: 90%;   
+        margin-top: 60%;
     }
 
-    .cards{
+    #produtos {
+        width: 90%;
+    }
+
+    .cards {
         margin-right: 1%;
         margin-left: 0%;
         margin-top: 15%;
         position: relative;
         left: 5%;
-        
+
+    }
+}
+
+@media (max-width: 1000px) {
+
+    header,
+    nav {
+        flex-direction: column;
+        align-items: center;
+
+        justify-content: center;
+        text-align: center;
+    }
+
+    #slogan {
+        margin-left: 16px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .btn-contact {
+        margin: 10px 0;
     }
 }
 
 /*estilização foter*/
 
-footer{
+footer {
     text-align: center;
     font-size: large;
 }
