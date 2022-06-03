@@ -2,12 +2,21 @@
 * {
     margin: 0;
     padding: 0;
+
     text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
 }
 /* reset do padrão do navegador */
 
 body, html {
     font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    scroll-behavior: smooth;
+    background-color: #FAEBD7;
 }
 
 /* tamanho da logo */
@@ -30,6 +39,70 @@ header {
 }
 /* centralizar o conteudo do header */
 
+::placeholder {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 1.1em;
+    color: #a55b2a;
+}
+
+button {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+
+    cursor: pointer;
+}
+
+h1 {
+    color: #51260e;
+}
+
+p {
+    color: #a55b2a;
+}
+
+strong {
+    color: #51260e;
+}
+
+.slogan-procurar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center; 
+
+    border-radius: 2px;
+    border: 1px solid #a55b2a;
+}
+
+.slogan-procurar > i {
+    margin-left: 10px;
+    color: #58280d;
+}
+
+.campo-pesquisa {
+    padding: 15px;
+    background-color: transparent;
+}
+
+.btn-procurar {
+    border-radius: 1px;
+    border: 1px solid #a55b2a;
+
+    color: white;
+    padding: 9px 25px;
+
+    margin-left: 15px;
+    transition: all .5s;
+    background-color: #a55b2a;
+}
+
+.btn-procurar:hover {
+    transition: all .5s;
+    opacity: 0.8;
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -50,7 +123,7 @@ a:hover {
 /* navbar e efeitos */
 
 /* estilização do button */
-button {
+.btn-header {
     border-radius: 2px;
     border: 1px solid #a55b2a;
 
@@ -66,13 +139,13 @@ button {
     transition: all .5s;
 }
 
-button:hover {
+.btn-header:hover {
     color: white;
     background-color: #a55b2a;
     transition: all .5s;
 }
 
-button .fa-location-dot {
+.btn-header .fa-location-dot {
     margin-left: 10px;
 }
 /* estilização do button */
@@ -120,23 +193,22 @@ section {
     display: flex;
 }
 
-#sobre{
+#slogan {
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: 100%;
     height: 50vh;
-
-    background-color: #FAEBD7;
 }
 
-.sobre-descricao > h1 {
-    color: #58280d;
-}
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.sobre-descricao > p {
-    color: #a55b2a;
+    width: 100%;
+    height: 50vh;
 }
 
 .sobre-vetor{
@@ -147,6 +219,65 @@ section {
     width: 30%;
 }
 /* estilização ´quem somos´ */
+
+
+#contato {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    margin-top: 30px;
+    color: #58280d;
+}
+
+.logo-contato {
+    text-align: center;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    border-radius: 2px;
+
+    box-sizing: border-box;
+    resize: none;
+}
+
+form > input[type=text] {
+    padding: 12px;
+    border: 1px solid #58280d;
+
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    border: 1px solid #58280d;
+    height: 250px;
+}
+
+.btn-contact {
+    margin-top: 16px;
+    border-radius: 2px;
+
+    background-color: #a55b2a;
+    color: white;
+
+    padding: 12px 80px;
+    transition: all .5s;
+}
+
+.btn-contact:hover {
+    opacity: 0.8;
+    transition: all .5s;
+}
+
+.btn-contact > .fa-paper-plane {
+    margin-left: 10px;
+}
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px){
     #sobre{
@@ -169,6 +300,4 @@ section {
         right: 5%;
         
     }
-
-    
 }
