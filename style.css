@@ -24,7 +24,9 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
+    background-color: #FAEBD7;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 /* centralizar o conteudo do header */
 
@@ -35,25 +37,27 @@ header {
 
 /* navbar e efeitos */
 nav, a {
-    color: black;
+    font-weight: 300;
+    color: #58280d;
     margin: 0 1.5em;
+    padding: 5px;
 }
 
 a:hover {
-    border-bottom: 2px solid #51260e;
+    border-bottom: 1px solid #a55b2a;
 }
 
 /* navbar e efeitos */
 
 /* estilização do button */
 button {
-    border-radius: 5px;
-    border: none;
+    border-radius: 2px;
+    border: 1px solid #a55b2a;
 
-    background-color: #51260e;
-    color: white;
+    background-color: transparent;
+    color: #58280d;
 
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Poppins', sans-serif;
     font-size: 100%;
 
@@ -63,7 +67,8 @@ button {
 }
 
 button:hover {
-    opacity: 0.9;
+    color: white;
+    background-color: #a55b2a;
     transition: all .5s;
 }
 
@@ -101,7 +106,7 @@ button .fa-location-dot {
 }
 
 img{
-    width: 40%;
+    width: 50%;
     text-align: center;
 }
 
