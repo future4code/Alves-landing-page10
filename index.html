@@ -23,16 +23,16 @@
             </div>
 
             <nav>
-                <a href="#">Quem somos</a>
-                <a href="#">Produtos</a>
-                <a href="#">Contato</a>
-                <button type="button">Onde estamos<i class="fa-solid fa-location-dot"></i></button>
+                <a href="#sobre">Quem somos</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#contato">Contato</a>
+                <button class="btn-header" type="button">Onde estamos<i class="fa-solid fa-location-dot"></i></button>
             </nav>
         </header>
 
         <main>
-            <section id="sobre">
-                <div class="sobre-descricao">
+            <section id="slogan">
+                <div class="sobre-slogan">
                     <h1>
                         Se você tem 4Food, você tem tudo.
                     </h1>
@@ -41,8 +41,29 @@
                         4Food nasceu para tornar sua vida mais fácil. Tire o estresse da sua rotina e deixa que<br>
                         a gente leva <strong>TUDO</strong> que você precisar, peça e receba onde estiver!
                     </p>
+
+                    <div class="slogan-procurar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="campo-pesquisa" type="text" placeholder="Endereço de entrega e número" name="search">
+                        <button class="btn-procurar">Buscar</button>
+                    </div>
                 </div>
                 <img class="sobre-vetor" src="./img/e-commerce-2020-finanziamenti-imprese-removebg-preview.png" alt="">
+            </section>
+
+            <section id="sobre">
+                <img class="sobre-vetor" src="./img/e-commerce-2020-finanziamenti-imprese-removebg-preview.png" alt="">
+
+                <div class="sobre-descricao">
+                    <h1>
+                        Prazer, somos a 4Food
+                    </h1>
+
+                    <p>
+                        Somos uma rede de supermercados que deseja trazer facilidade e rapidez para nossos clientes<br>
+                        ao solicitar seu pedido com rapidez na entrega e facilidade de acessa-lo em nosso site!
+                    </p>
+                </div>
             </section>
 
             <section id="produtos">
@@ -71,8 +92,28 @@
                 </div>
             </section>
 
-            <section class="contato"></section>
+            <section id="contato">
+                <form>
+                    <h1 class="logo-contato">Formulário de contato</h1>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nomecompleto" id="nome">
+
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email">
+
+                    <label for="descricao">Mensagem</label>
+                    <textarea name="descricao" id="descricao" placeholder="Escreva a sua mensagem aqui..."></textarea>
+
+                    <button type="submit" class="btn-contact">Enviar<i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p> Nos siga nas redes sociais: </p>
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/500/undefined/facebook--v1.png"/></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="https://img.icons8.com/ios/50/undefined/instagram-new--v1.png"/></a>
+                <a href="https://br.linkedin.com/" target="_blank"><img src="https://img.icons8.com/ios/500/undefined/linkedin.png"/></a>
+            </footer>
     </body>
 </html>
