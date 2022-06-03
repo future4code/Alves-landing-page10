@@ -63,11 +63,13 @@ button {
 
     cursor: pointer;
     padding: 10px 15px 10px 15px;
+    transition: all .5s;
 }
 
 button:hover {
     color: white;
     background-color: #a55b2a;
+    transition: all .5s;
 }
 
 button .fa-location-dot {
