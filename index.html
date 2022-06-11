@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!-- meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4Food | Coma Bem</title>
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./img/4food-sem-bg-horizontal.png" alt="Logo do site 4Food">
+            </div>
+
+            <nav>
+                <a href="#sobre">Quem somos</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#contato">Contato</a>
+                <button class="btn-header" type="button">Onde estamos<i class="fa-solid fa-location-dot"></i></button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="slogan">
+                <div class="sobre-slogan">
+                    <h1>
+                        Se você tem 4Food, você tem tudo.
+                    </h1>
+
+                    <p>
+                        4Food nasceu para tornar sua vida mais fácil. Tire o estresse da sua rotina e deixa que<br>
+                        a gente leva <strong>TUDO</strong> que você precisar, peça e receba onde estiver!
+                    </p>
+
+                    <div class="slogan-procurar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="campo-pesquisa" type="text" placeholder="Endereço de entrega e número" name="search">
+                        <button class="btn-procurar">Buscar</button>
+                    </div>
+                </div>
+                <img class="sobre-vetor" src="./img/e-commerce-2020-finanziamenti-imprese-removebg-preview.png" alt="">
+            </section>
+
+            <section id="sobre">
+                <img class="sobre-vetor" src="./img/e-commerce-2020-finanziamenti-imprese-removebg-preview.png" alt="">
+
+                <div class="sobre-descricao">
+                    <h1>
+                        Prazer, somos a 4Food
+                    </h1>
+
+                    <p>
+                        Somos uma rede de supermercados que deseja trazer facilidade e rapidez para nossos clientes<br>
+                        ao solicitar seu pedido com rapidez na entrega e facilidade de acessa-lo em nosso site!
+                    </p>
+                </div>
+            </section>
+
+            <section id="produtos">
+                <!--Primeiro card-->
+                <div class="cards">
+                    <div class="img">
+                        <img src="img/comidapronta.png" alt="Icone de comidas prontas">
+                    </div>
+
+                    <h1>Comidas Prontas</h1>
+                    <div class="descricao">
+                        <p>Pedir uma refeição completa para seu endereço.</p>
+                    </div>
+                </div>
+
+                <!--Segundo card-->
+                <div class="cards">
+                    <div class="img">
+                        <img src="img/supermercado.png" alt="Icone de Compras supermercado">
+                    </div>
+
+                    <h1>Compras de Supermercado</h1>
+                    <div class="descricao">
+                        <p>Realizar compras no nosso supermercado online</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato">
+                <form>
+                    <h1 class="logo-contato">Nosso contato</h1>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nomecompleto" id="nome">
+
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email">
+
+                    <label for="descricao">Mensagem</label>
+                    <textarea name="descricao" id="descricao" placeholder="Escreva a sua mensagem aqui..."></textarea>
+
+                    <button type="submit" class="btn-contact">Enviar<i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p> Nos siga nas redes sociais: </p>
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/500/undefined/facebook--v1.png"/></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="https://img.icons8.com/ios/50/undefined/instagram-new--v1.png"/></a>
+                <a href="https://br.linkedin.com/" target="_blank"><img src="https://img.icons8.com/ios/500/undefined/linkedin.png"/></a>
+            </footer>
+    </body>
+</html>
